@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Val",
+    "avatar": "/avatars/val.png",
+    "points": 12
+  },
+  {
+    "name": "Vic",
+    "avatar": "/avatars/vic.png",
+    "points": 12
+  },
+  {
+    "name": "Viole",
+    "avatar": "/avatars/violeta.png",
+    "points": 9
+  },
+  {
+    "name": "Bruno",
+    "avatar": "/avatars/bruno.png",
+    "points": 15
+  },
+  {
+    "name": "Roli",
+    "avatar": "/avatars/roli.png",
+    "points": 18
+  },
+  {
+    "name": "Oliver",
+    "avatar": "/avatars/oliver.png",
+    "points": 12
+  }
+]
