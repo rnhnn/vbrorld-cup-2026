@@ -9,7 +9,7 @@ const jost = Jost({
 
 export const metadata = {
   title: "VBRO Cup 2026",
-  description: "World Cup prediction ranking for the VBRO Cup 2026.",
+  description: "La verdadera copa.",
   manifest: "/site.webmanifest",
 };
 
