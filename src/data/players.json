@@ -2,17 +2,17 @@
   {
     "name": "Val",
     "avatar": "/avatars/val.png",
-    "points": 21
+    "points": 24
   },
   {
     "name": "Vic",
     "avatar": "/avatars/vic.png",
-    "points": 27
+    "points": 30
   },
   {
     "name": "Viole",
     "avatar": "/avatars/violeta.png",
-    "points": 15
+    "points": 18
   },
   {
     "name": "Bruno",
@@ -22,11 +22,11 @@
   {
     "name": "Roli",
     "avatar": "/avatars/roli.png",
-    "points": 24
+    "points": 27
   },
   {
     "name": "Oliver",
     "avatar": "/avatars/oliver.png",
-    "points": 27
+    "points": 30
   }
 ]
