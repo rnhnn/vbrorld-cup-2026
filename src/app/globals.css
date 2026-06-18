@@ -15,7 +15,8 @@
 }
 
 html {
-  height: 100%;
+  min-height: 100%;
+  background-color: var(--background);
 }
 
 html,
@@ -27,12 +28,13 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  min-height: 100vh;
   font-family: var(--font-body), Arial, Helvetica, sans-serif;
   color: var(--foreground);
   background:
     radial-gradient(circle at top, #fbf5ed 0%, var(--background) 68%),
     var(--background);
+  background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
