@@ -2,6 +2,7 @@ import players from "@/data/players.json";
 
 export default function Home() {
   const ranking = [...players].sort((a, b) => b.points - a.points);
+  const scores = [...new Set(ranking.map((player) => player.points))];
 
   return (
     <main className="page">
@@ -12,11 +13,8 @@ export default function Home() {
       </h1>
 
       <ol className="ranking" aria-label="VBRO Cup 2026 ranking">
-        {ranking.map((player, index) => {
-          const rank =
-            index > 0 && player.points === ranking[index - 1].points
-              ? ranking.findIndex((p) => p.points === player.points) + 1
-              : index + 1;
+        {ranking.map((player) => {
+          const rank = scores.indexOf(player.points) + 1;
 
           return (
             <li className="ranking-item" key={player.name}>
