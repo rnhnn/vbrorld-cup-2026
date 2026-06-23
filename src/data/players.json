@@ -2,31 +2,31 @@
   {
     "name": "Val",
     "avatar": "/avatars/val.png",
-    "points": 60
+    "points": 63
   },
   {
     "name": "Vic",
     "avatar": "/avatars/vic.png",
-    "points": 66
+    "points": 69
   },
   {
     "name": "Viole",
     "avatar": "/avatars/violeta.png",
-    "points": 48
+    "points": 51
   },
   {
     "name": "Bruno",
     "avatar": "/avatars/bruno.png",
-    "points": 60
+    "points": 63
   },
   {
     "name": "Roli",
     "avatar": "/avatars/roli.png",
-    "points": 60
+    "points": 63
   },
   {
     "name": "Oliver",
     "avatar": "/avatars/oliver.png",
-    "points": 72
+    "points": 75
   }
 ]
