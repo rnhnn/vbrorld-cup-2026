@@ -1,8 +1,14 @@
-import players from "@/data/players.json";
+import playersData from "@/data/players.json";
+import { readPlayers } from "@/lib/players";
 
-export default function Home() {
+export default async function Home() {
+  const showLocalToolbar = process.env.NODE_ENV === "development";
+  const players = showLocalToolbar ? await readPlayers() : playersData;
   const ranking = [...players].sort((a, b) => b.points - a.points);
   const scores = [...new Set(ranking.map((player) => player.points))];
+  const LocalhostScoreToolbar = showLocalToolbar
+    ? (await import("./LocalhostScoreToolbar")).default
+    : null;
 
   return (
     <main className="page">
@@ -40,6 +46,10 @@ export default function Home() {
           );
         })}
       </ol>
+
+      {LocalhostScoreToolbar ? (
+        <LocalhostScoreToolbar players={players} />
+      ) : null}
     </main>
   );
 }
