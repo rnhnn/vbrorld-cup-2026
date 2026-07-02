@@ -3,6 +3,8 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState, useTransition } from "react";
 
+const PLAYER_ORDER = ["Val", "Vic", "Viole", "Bruno", "Roli", "Oliver"];
+
 export default function LocalhostScoreToolbar({ players }) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
@@ -11,7 +13,10 @@ export default function LocalhostScoreToolbar({ players }) {
   const [busyKey, setBusyKey] = useState("");
   const [notice, setNotice] = useState("Local score dock");
   const sortedPlayers = useMemo(
-    () => [...players].sort((a, b) => a.name.localeCompare(b.name)),
+    () =>
+      [...players].sort(
+        (a, b) => PLAYER_ORDER.indexOf(a.name) - PLAYER_ORDER.indexOf(b.name),
+      ),
     [players],
   );
 
